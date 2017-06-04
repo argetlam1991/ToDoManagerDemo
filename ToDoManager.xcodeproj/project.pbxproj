@@ -7,27 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48261C241EE373FB00674670 /* MyUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48261C231EE373FB00674670 /* MyUINavigationController.m */; };
+		48261C271EE3746500674670 /* MyUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48261C261EE3746500674670 /* MyUITableViewController.m */; };
+		48261C351EE3846100674670 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48261C341EE3846100674670 /* MyTableViewCell.m */; };
 		4883F38B1EE372A2002E0B4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883F38A1EE372A2002E0B4E /* main.m */; };
 		4883F38E1EE372A2002E0B4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883F38D1EE372A2002E0B4E /* AppDelegate.m */; };
-		4883F3911EE372A3002E0B4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4883F3901EE372A3002E0B4E /* ViewController.m */; };
 		4883F3941EE372A3002E0B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4883F3921EE372A3002E0B4E /* Main.storyboard */; };
 		4883F3971EE372A3002E0B4E /* ToDoManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4883F3951EE372A3002E0B4E /* ToDoManager.xcdatamodeld */; };
 		4883F3991EE372A3002E0B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4883F3981EE372A3002E0B4E /* Assets.xcassets */; };
 		4883F39C1EE372A3002E0B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4883F39A1EE372A3002E0B4E /* LaunchScreen.storyboard */; };
+		48866F5C1EE38A0600FB5158 /* MyUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48866F5B1EE38A0600FB5158 /* MyUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48261C221EE373FB00674670 /* MyUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUINavigationController.h; sourceTree = "<group>"; };
+		48261C231EE373FB00674670 /* MyUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUINavigationController.m; sourceTree = "<group>"; };
+		48261C251EE3746500674670 /* MyUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUITableViewController.h; sourceTree = "<group>"; };
+		48261C261EE3746500674670 /* MyUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUITableViewController.m; sourceTree = "<group>"; };
+		48261C2B1EE3758700674670 /* DPHandlesMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHandlesMOC.h; sourceTree = "<group>"; };
+		48261C2C1EE375C800674670 /* DPHandlesToDoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHandlesToDoEntity.h; sourceTree = "<group>"; };
+		48261C331EE3846100674670 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		48261C341EE3846100674670 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 		4883F3861EE372A2002E0B4E /* ToDoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4883F38A1EE372A2002E0B4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4883F38C1EE372A2002E0B4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4883F38D1EE372A2002E0B4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4883F38F1EE372A2002E0B4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4883F3901EE372A3002E0B4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4883F3931EE372A3002E0B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4883F3961EE372A3002E0B4E /* ToDoManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoManager.xcdatamodel; sourceTree = "<group>"; };
 		4883F3981EE372A3002E0B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4883F39B1EE372A3002E0B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4883F39D1EE372A3002E0B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48866F5A1EE38A0600FB5158 /* MyUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIViewController.h; sourceTree = "<group>"; };
+		48866F5B1EE38A0600FB5158 /* MyUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +71,19 @@
 		4883F3881EE372A2002E0B4E /* ToDoManager */ = {
 			isa = PBXGroup;
 			children = (
+				48866F5A1EE38A0600FB5158 /* MyUIViewController.h */,
+				48866F5B1EE38A0600FB5158 /* MyUIViewController.m */,
 				4883F38C1EE372A2002E0B4E /* AppDelegate.h */,
 				4883F38D1EE372A2002E0B4E /* AppDelegate.m */,
-				4883F38F1EE372A2002E0B4E /* ViewController.h */,
-				4883F3901EE372A3002E0B4E /* ViewController.m */,
 				4883F3921EE372A3002E0B4E /* Main.storyboard */,
+				48261C331EE3846100674670 /* MyTableViewCell.h */,
+				48261C341EE3846100674670 /* MyTableViewCell.m */,
+				48261C2B1EE3758700674670 /* DPHandlesMOC.h */,
+				48261C2C1EE375C800674670 /* DPHandlesToDoEntity.h */,
+				48261C251EE3746500674670 /* MyUITableViewController.h */,
+				48261C261EE3746500674670 /* MyUITableViewController.m */,
+				48261C221EE373FB00674670 /* MyUINavigationController.h */,
+				48261C231EE373FB00674670 /* MyUINavigationController.m */,
 				4883F3981EE372A3002E0B4E /* Assets.xcassets */,
 				4883F39A1EE372A3002E0B4E /* LaunchScreen.storyboard */,
 				4883F39D1EE372A3002E0B4E /* Info.plist */,
@@ -154,10 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4883F3911EE372A3002E0B4E /* ViewController.m in Sources */,
 				4883F3971EE372A3002E0B4E /* ToDoManager.xcdatamodeld in Sources */,
 				4883F38E1EE372A2002E0B4E /* AppDelegate.m in Sources */,
+				48261C351EE3846100674670 /* MyTableViewCell.m in Sources */,
+				48261C271EE3746500674670 /* MyUITableViewController.m in Sources */,
 				4883F38B1EE372A2002E0B4E /* main.m in Sources */,
+				48261C241EE373FB00674670 /* MyUINavigationController.m in Sources */,
+				48866F5C1EE38A0600FB5158 /* MyUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +208,7 @@
 		4883F39E1EE372A3002E0B4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -235,7 +257,7 @@
 		4883F39F1EE372A3002E0B4E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -318,6 +340,7 @@
 				4883F3A21EE372A3002E0B4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
