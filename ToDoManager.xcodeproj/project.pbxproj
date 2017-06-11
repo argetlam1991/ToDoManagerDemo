@@ -17,6 +17,8 @@
 		4883F3991EE372A3002E0B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4883F3981EE372A3002E0B4E /* Assets.xcassets */; };
 		4883F39C1EE372A3002E0B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4883F39A1EE372A3002E0B4E /* LaunchScreen.storyboard */; };
 		48866F5C1EE38A0600FB5158 /* MyUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48866F5B1EE38A0600FB5158 /* MyUIViewController.m */; };
+		48866F6D1EE3902200FB5158 /* ToDoEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 48866F6A1EE3902200FB5158 /* ToDoEntity+CoreDataClass.m */; };
+		48866F6E1EE3902200FB5158 /* ToDoEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 48866F6C1EE3902200FB5158 /* ToDoEntity+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +26,7 @@
 		48261C231EE373FB00674670 /* MyUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUINavigationController.m; sourceTree = "<group>"; };
 		48261C251EE3746500674670 /* MyUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUITableViewController.h; sourceTree = "<group>"; };
 		48261C261EE3746500674670 /* MyUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUITableViewController.m; sourceTree = "<group>"; };
-		48261C2B1EE3758700674670 /* DPHandlesMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHandlesMOC.h; sourceTree = "<group>"; };
+		48261C2B1EE3758700674670 /* DPHandlesPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHandlesPC.h; sourceTree = "<group>"; };
 		48261C2C1EE375C800674670 /* DPHandlesToDoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHandlesToDoEntity.h; sourceTree = "<group>"; };
 		48261C331EE3846100674670 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
 		48261C341EE3846100674670 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
@@ -39,6 +41,10 @@
 		4883F39D1EE372A3002E0B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48866F5A1EE38A0600FB5158 /* MyUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUIViewController.h; sourceTree = "<group>"; };
 		48866F5B1EE38A0600FB5158 /* MyUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUIViewController.m; sourceTree = "<group>"; };
+		48866F691EE3902200FB5158 /* ToDoEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ToDoEntity+CoreDataClass.h"; path = "ToDoManager/ToDoEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		48866F6A1EE3902200FB5158 /* ToDoEntity+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ToDoEntity+CoreDataClass.m"; path = "ToDoManager/ToDoEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		48866F6B1EE3902200FB5158 /* ToDoEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ToDoEntity+CoreDataProperties.h"; path = "ToDoManager/ToDoEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		48866F6C1EE3902200FB5158 /* ToDoEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ToDoEntity+CoreDataProperties.m"; path = "ToDoManager/ToDoEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,10 @@
 		4883F37D1EE372A2002E0B4E = {
 			isa = PBXGroup;
 			children = (
+				48866F691EE3902200FB5158 /* ToDoEntity+CoreDataClass.h */,
+				48866F6A1EE3902200FB5158 /* ToDoEntity+CoreDataClass.m */,
+				48866F6B1EE3902200FB5158 /* ToDoEntity+CoreDataProperties.h */,
+				48866F6C1EE3902200FB5158 /* ToDoEntity+CoreDataProperties.m */,
 				4883F3881EE372A2002E0B4E /* ToDoManager */,
 				4883F3871EE372A2002E0B4E /* Products */,
 			);
@@ -78,7 +88,7 @@
 				4883F3921EE372A3002E0B4E /* Main.storyboard */,
 				48261C331EE3846100674670 /* MyTableViewCell.h */,
 				48261C341EE3846100674670 /* MyTableViewCell.m */,
-				48261C2B1EE3758700674670 /* DPHandlesMOC.h */,
+				48261C2B1EE3758700674670 /* DPHandlesPC.h */,
 				48261C2C1EE375C800674670 /* DPHandlesToDoEntity.h */,
 				48261C251EE3746500674670 /* MyUITableViewController.h */,
 				48261C261EE3746500674670 /* MyUITableViewController.m */,
@@ -177,6 +187,8 @@
 				4883F38E1EE372A2002E0B4E /* AppDelegate.m in Sources */,
 				48261C351EE3846100674670 /* MyTableViewCell.m in Sources */,
 				48261C271EE3746500674670 /* MyUITableViewController.m in Sources */,
+				48866F6E1EE3902200FB5158 /* ToDoEntity+CoreDataProperties.m in Sources */,
+				48866F6D1EE3902200FB5158 /* ToDoEntity+CoreDataClass.m in Sources */,
 				4883F38B1EE372A2002E0B4E /* main.m in Sources */,
 				48261C241EE373FB00674670 /* MyUINavigationController.m in Sources */,
 				48866F5C1EE38A0600FB5158 /* MyUIViewController.m in Sources */,

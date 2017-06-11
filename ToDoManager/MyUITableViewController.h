@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPHandlesPC.h"
+#import "DPHandlesToDoEntity.h"
 
-@interface MyUITableViewController : UITableViewController
+@interface MyUITableViewController : UITableViewController <DPHandlesPC>
+- (void) receivePC: (NSPersistentContainer *)incomingPC;
 
 @end

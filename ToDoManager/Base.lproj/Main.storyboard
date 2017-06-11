@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,23 +15,58 @@
         <scene sceneID="Ulp-ZB-dXp">
             <objects>
                 <tableViewController id="gHt-Vy-idZ" customClass="MyUITableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ms8-Ja-8kz">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Io8-mA-Nom">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCellIdentifier" id="WNs-bE-dmB" customClass="MyTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gnk-mA-V0d" customClass="MyTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WNs-bE-dmB" id="9xR-SW-ajr">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gnk-mA-V0d" id="w1p-4k-PWH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmt-Wt-EYd">
+                                            <rect key="frame" x="250" y="11" width="117" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuS-sp-DBu">
+                                            <rect key="frame" x="8" y="12" width="234" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fuS-sp-DBu" firstAttribute="centerY" secondItem="w1p-4k-PWH" secondAttribute="centerY" id="5HV-o0-net"/>
+                                        <constraint firstItem="bmt-Wt-EYd" firstAttribute="trailing" secondItem="w1p-4k-PWH" secondAttribute="trailingMargin" id="8du-d4-LhO"/>
+                                        <constraint firstItem="bmt-Wt-EYd" firstAttribute="leading" secondItem="fuS-sp-DBu" secondAttribute="trailing" constant="8" symbolic="YES" id="OGf-X2-DOe"/>
+                                        <constraint firstItem="fuS-sp-DBu" firstAttribute="width" secondItem="bmt-Wt-EYd" secondAttribute="width" multiplier="2" id="S7l-c6-D4k"/>
+                                        <constraint firstItem="bmt-Wt-EYd" firstAttribute="centerY" secondItem="w1p-4k-PWH" secondAttribute="centerY" id="pSb-Bh-co4"/>
+                                        <constraint firstItem="fuS-sp-DBu" firstAttribute="leading" secondItem="w1p-4k-PWH" secondAttribute="leadingMargin" id="sUY-sQ-z2F"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration">
+                                    <string key="identifier" base64-UTF8="YES">
+CA
+</string>
+                                </accessibility>
+                                <string key="reuseIdentifier" base64-UTF8="YES">
+EE15VGFibGVWaWV3Q2VsbElkZW50aWZpZXI
+</string>
+                                <connections>
+                                    <outlet property="toDoDueDateLabel" destination="bmt-Wt-EYd" id="7i8-FP-KCA"/>
+                                    <outlet property="toDoTitleLabel" destination="fuS-sp-DBu" id="RPb-Hy-Qyl"/>
+                                    <segue destination="QzH-mp-Die" kind="show" id="w3r-gA-95K"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="gHt-Vy-idZ" id="Qg8-e7-IhF"/>
-                            <outlet property="delegate" destination="gHt-Vy-idZ" id="qzl-1t-6Cb"/>
+                            <outlet property="dataSource" destination="gHt-Vy-idZ" id="jGb-sp-BtV"/>
+                            <outlet property="delegate" destination="gHt-Vy-idZ" id="X1t-08-l4f"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="To Do List" id="gOY-qt-veR">
@@ -42,7 +79,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPc-Fu-lHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="612" y="122"/>
+            <point key="canvasLocation" x="601" y="122"/>
         </scene>
         <!--To Do-->
         <scene sceneID="Ias-c3-wR0">
@@ -55,13 +92,101 @@
                     <view key="view" contentMode="scaleToFill" id="uaE-0e-Npa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFr-DO-anI">
+                                <rect key="frame" x="16" y="72" width="91" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="Equ-b0-tIv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2k-9J-p6Y">
+                                <rect key="frame" x="16" y="142" width="91" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="tJx-tE-bDv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNJ-RL-ETi">
+                                <rect key="frame" x="16" y="310" width="83.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83.5" id="K4c-Lk-2Hw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IYl-sR-5uF">
+                                <rect key="frame" x="16" y="174" width="359" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="hA1-Qh-3sZ"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="HWd-9N-8PI">
+                                <rect key="frame" x="16" y="342" width="359" height="216"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <date key="date" timeIntervalSinceReferenceDate="518310890.196769">
+                                    <!--2017-06-04 23:14:50 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dueDateEdited:" destination="QzH-mp-Die" eventType="editingDidEnd" id="2Te-de-BaT"/>
+                                </connections>
+                            </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8F-Xj-cl4">
+                                <rect key="frame" x="16" y="104" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="titleFieldEdited:" destination="QzH-mp-Die" eventType="editingDidEnd" id="vjA-s1-6E8"/>
+                                </connections>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HWd-9N-8PI" secondAttribute="trailing" id="0b6-74-chi"/>
+                            <constraint firstItem="iNJ-RL-ETi" firstAttribute="leading" secondItem="uaE-0e-Npa" secondAttribute="leadingMargin" id="1aD-kq-yth"/>
+                            <constraint firstItem="S8F-Xj-cl4" firstAttribute="top" secondItem="YFr-DO-anI" secondAttribute="bottom" constant="8" symbolic="YES" id="2Gl-dj-qGC"/>
+                            <constraint firstItem="S8F-Xj-cl4" firstAttribute="trailing" secondItem="uaE-0e-Npa" secondAttribute="trailingMargin" id="BtD-n9-sWx"/>
+                            <constraint firstAttribute="trailing" secondItem="IYl-sR-5uF" secondAttribute="trailing" id="Jkj-SV-7WI"/>
+                            <constraint firstItem="YFr-DO-anI" firstAttribute="top" secondItem="h0F-FR-XEv" secondAttribute="bottom" constant="8" symbolic="YES" id="OzV-Xp-hdv"/>
+                            <constraint firstItem="IYl-sR-5uF" firstAttribute="leading" secondItem="Y2k-9J-p6Y" secondAttribute="leading" id="Q9c-vC-OJG"/>
+                            <constraint firstItem="Y2k-9J-p6Y" firstAttribute="top" secondItem="S8F-Xj-cl4" secondAttribute="bottom" constant="8" symbolic="YES" id="UX0-xf-zwb"/>
+                            <constraint firstItem="IYl-sR-5uF" firstAttribute="top" secondItem="Y2k-9J-p6Y" secondAttribute="bottom" constant="8" id="VMj-jY-Fh9"/>
+                            <constraint firstItem="HWd-9N-8PI" firstAttribute="leading" secondItem="iNJ-RL-ETi" secondAttribute="leading" id="XpV-WE-xIs"/>
+                            <constraint firstItem="YFr-DO-anI" firstAttribute="leading" secondItem="uaE-0e-Npa" secondAttribute="leadingMargin" id="bDN-nT-gFd"/>
+                            <constraint firstItem="Y2k-9J-p6Y" firstAttribute="leading" secondItem="uaE-0e-Npa" secondAttribute="leadingMargin" id="brR-7j-ilR"/>
+                            <constraint firstItem="iNJ-RL-ETi" firstAttribute="top" secondItem="IYl-sR-5uF" secondAttribute="bottom" constant="8" symbolic="YES" id="f4X-f9-VGP"/>
+                            <constraint firstItem="S8F-Xj-cl4" firstAttribute="leading" secondItem="YFr-DO-anI" secondAttribute="leading" id="f7Q-rp-gVI"/>
+                            <constraint firstItem="HWd-9N-8PI" firstAttribute="top" secondItem="iNJ-RL-ETi" secondAttribute="bottom" constant="8" symbolic="YES" id="flk-6B-mzM"/>
+                            <constraint firstItem="IYl-sR-5uF" firstAttribute="trailing" secondItem="HWd-9N-8PI" secondAttribute="trailing" id="gBt-F4-lkG"/>
+                            <constraint firstItem="IYl-sR-5uF" firstAttribute="leading" secondItem="iNJ-RL-ETi" secondAttribute="leading" id="yW8-yO-m8d"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="To Do" id="1vx-SO-9Ac"/>
+                    <navigationItem key="navigationItem" title="To Do" id="1vx-SO-9Ac">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="UeW-9Z-tC3">
+                            <connections>
+                                <action selector="trashTapped:" destination="QzH-mp-Die" id="U1P-dB-Wqn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="IYl-sR-5uF" id="NxH-MY-F3D"/>
+                        <outlet property="dueDateField" destination="HWd-9N-8PI" id="guv-4h-tJp"/>
+                        <outlet property="titleField" destination="S8F-Xj-cl4" id="oaI-xA-EaJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fg1-nr-03W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1420" y="122"/>
+            <point key="canvasLocation" x="1420" y="121.88905547226388"/>
         </scene>
         <!--MyUI Navigation Controller-->
         <scene sceneID="4wx-na-pdF">
@@ -80,4 +205,7 @@
             <point key="canvasLocation" x="-340" y="122"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="w3r-gA-95K"/>
+    </inferredMetricsTieBreakers>
 </document>

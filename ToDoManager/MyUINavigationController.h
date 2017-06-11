@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPHandlesPC.h"
 
-@interface MyUINavigationController : UINavigationController
+@interface MyUINavigationController : UINavigationController <DPHandlesPC>
+
+- (void) receivePC:(NSPersistentContainer *)incomingPC;
 
 @end

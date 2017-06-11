@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
-    <entity name="ToDoEntity" representedClassName="ToDoEntity" syncable="YES" codeGenerationType="class">
+    <entity name="ToDoEntity" representedClassName="ToDoEntity" syncable="YES">
         <attribute name="toDoDetails" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="toDoDueDate" optional="YES" attributeType="Date" minDateTimeInterval="504950400" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toDoDueDate" optional="YES" attributeType="Date" minDateTimeInterval="518229960" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="toDoTitle" attributeType="String" minValueString="1" syncable="YES"/>
     </entity>
     <elements>

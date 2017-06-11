@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@protocol DPHandlesMOC <NSObject>
+@protocol DPHandlesPC <NSObject>
 
-- (void) reveiceMOC: (NSManagedObjectContext *)incomingMOC;
-
+- (void) receivePC: (NSPersistentContainer *)incomingPC;
 
 @end

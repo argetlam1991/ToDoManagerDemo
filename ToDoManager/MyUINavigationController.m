@@ -10,6 +10,7 @@
 
 @interface MyUINavigationController ()
 
+@property (strong, nonatomic) NSPersistentContainer *persistentContainer;
 @end
 
 @implementation MyUINavigationController
@@ -34,4 +35,9 @@
 }
 */
 
+- (void) receivePC:(NSPersistentContainer *)incomingPC{
+  self.persistentContainer = incomingPC;
+  id<DPHandlesPC> child = (id<DPHandlesPC>) self.viewControllers[0];
+  [child receivePC:self.persistentContainer];
+}
 @end

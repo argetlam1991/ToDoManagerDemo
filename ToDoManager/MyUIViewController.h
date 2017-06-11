@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPHandlesPC.h"
+#import "DPHandlesToDoEntity.h"
+#import "ToDoEntity+CoreDataClass.h"
 
-@interface MyUIViewController : UIViewController
 
+
+@interface MyUIViewController : UIViewController <DPHandlesPC, DPHandlesToDoEntity>
+- (void) receivePC: (NSPersistentContainer *)incomingPC;
+- (void) reveiceToDoEntity:(ToDoEntity *)incomingToDoEntity;
 @end
